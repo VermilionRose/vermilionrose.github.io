@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Elements
-image: assets/images/pic01.jpg
+title: Past Events
+image: assets/images/hard_at_work.jpg
 nav-menu: true
+show_tile: false
+nav-menu: false
 ---
 
 <!-- Main -->

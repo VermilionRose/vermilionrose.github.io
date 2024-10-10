@@ -12,8 +12,8 @@
 	}
 
 	table {
-		margin: 0 0 _size(element-margin) 0;
-		width: 100%;
+		margin: _size(element-margin) auto _size(element-margin) auto;
+		width: 80%;
 
 		tbody {
 			tr {
