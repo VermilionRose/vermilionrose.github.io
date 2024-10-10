@@ -10,11 +10,10 @@ nav-menu: true
 <table class="table table-bordered table-hover table-condensed">
 <thead><tr><th title="Field #1">Date</th>
 <th title="Field #2">Event Name</th>
-<th title="Field #3">Organization</th>
-<th title="Field #4">Client</th>
+<th title="Field #3">Client</th>
+<th title="Field #4">For</th>
 <th title="Field #5">Role</th>
 <th title="Field #6">Type/Game</th>
-<th title="Field #7">Testing</th>
 </tr></thead>
 <tbody><tr>
 <td>Oct 9, 2024</td>
@@ -23,7 +22,6 @@ nav-menu: true
 <td>The Free Press</td>
 <td>Director/Technical Director</td>
 <td>Debate</td>
-<td align="right">88</td>
 </tr>
 <tr>
 <td>Oct 2-3, 2024</td>
@@ -32,7 +30,6 @@ nav-menu: true
 <td>EA</td>
 <td>Technical Director</td>
 <td>EAFC 2024</td>
-<td align="right">87</td>
 </tr>
 <tr>
 <td>Aug 24, 2024</td>
@@ -41,7 +38,7 @@ nav-menu: true
 <td>Inception Studios</td>
 <td>EIC</td>
 <td>Conference</td>
-<td align="right">86</td>
+
 </tr>
 <tr>
 <td>Aug 4-8, 2024</td>
@@ -50,7 +47,7 @@ nav-menu: true
 <td>Konami</td>
 <td>Technical Director</td>
 <td>TCG</td>
-<td align="right">85</td>
+
 </tr>
 <tr>
 <td>July 20-21, 2024</td>
@@ -59,7 +56,7 @@ nav-menu: true
 <td>Riot Games</td>
 <td>Game Admin</td>
 <td>Valorant</td>
-<td align="right">84</td>
+
 </tr>
 <tr>
 <td>Jul 17, 2024</td>
@@ -68,7 +65,7 @@ nav-menu: true
 <td> </td>
 <td>Technical Director</td>
 <td> </td>
-<td align="right">83</td>
+
 </tr>
 <tr>
 <td>July 11-13, 2024</td>
@@ -77,7 +74,7 @@ nav-menu: true
 <td>US Navy</td>
 <td>Technical Director</td>
 <td>Various</td>
-<td align="right">82</td>
+
 </tr>
 <tr>
 <td>July 9-10, 2024</td>
@@ -86,7 +83,7 @@ nav-menu: true
 <td>Nike</td>
 <td>EIC</td>
 <td>Talkshow</td>
-<td align="right">81</td>
+
 </tr>
 <tr>
 <td>July 5-7, 2024</td>
@@ -95,7 +92,7 @@ nav-menu: true
 <td>Wide Angle Productions</td>
 <td>Transmission Tech</td>
 <td>Concert</td>
-<td align="right">80</td>
+
 </tr>
 <tr>
 <td>June 19-20 2024</td>
@@ -104,7 +101,7 @@ nav-menu: true
 <td>LSE</td>
 <td>Technical Director</td>
 <td>SMT</td>
-<td align="right">79</td>
+
 </tr>
 <tr>
 <td>May 3-4 2024</td>
@@ -113,7 +110,7 @@ nav-menu: true
 <td>US Navy</td>
 <td>Technical Director</td>
 <td>Modern Warfare</td>
-<td align="right">78</td>
+
 </tr>
 <tr>
 <td>Apr 13-14 2024</td>
@@ -122,7 +119,7 @@ nav-menu: true
 <td>NBA</td>
 <td>GFX Operator</td>
 <td>NBA2K24</td>
-<td align="right">77</td>
+
 </tr>
 <tr>
 <td>Mar 15-18, 2024</td>
@@ -131,7 +128,7 @@ nav-menu: true
 <td>LSE</td>
 <td>Encoding Engineer</td>
 <td>Parade</td>
-<td align="right">76</td>
+
 </tr>
 <tr>
 <td>Mar 6, 2024</td>
@@ -140,7 +137,7 @@ nav-menu: true
 <td>Nike</td>
 <td>Technical Director</td>
 <td>Talkshow</td>
-<td align="right">75</td>
+
 </tr>
 <tr>
 <td>Feb 28 - Jun 29, 2024</td>
@@ -149,7 +146,7 @@ nav-menu: true
 <td>NBA</td>
 <td>Encoding Engineer</td>
 <td>NBA2K24</td>
-<td align="right">74</td>
+
 </tr>
 <tr>
 <td>Feb 17-18, 2024</td>
@@ -158,7 +155,7 @@ nav-menu: true
 <td>CVH</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">73</td>
+
 </tr>
 <tr>
 <td>Jan 20, 2023 - July 28, 2024</td>
@@ -167,7 +164,7 @@ nav-menu: true
 <td>- </td>
 <td>Producer/Technical Director</td>
 <td>League of Legends</td>
-<td align="right">72</td>
+
 </tr>
 <tr>
 <td>Dec 19-20, 2023</td>
@@ -176,7 +173,7 @@ nav-menu: true
 <td>Nike</td>
 <td>EIC</td>
 <td>Talkshow</td>
-<td align="right">71</td>
+
 </tr>
 <tr>
 <td>Dec 15, 2023</td>
@@ -185,7 +182,7 @@ nav-menu: true
 <td>MPH</td>
 <td>Producer/TD/EIC/A1</td>
 <td>MPH</td>
-<td align="right">70</td>
+
 </tr>
 <tr>
 <td>Dec 13, 2023</td>
@@ -194,7 +191,7 @@ nav-menu: true
 <td>Nike</td>
 <td>EIC</td>
 <td>Talkshow</td>
-<td align="right">69</td>
+
 </tr>
 <tr>
 <td>Dec 12, 2023</td>
@@ -203,7 +200,7 @@ nav-menu: true
 <td>@WillProduces</td>
 <td>Producer/EIC</td>
 <td>Dungeons &amp; Dragons</td>
-<td align="right">68</td>
+
 </tr>
 <tr>
 <td>Dec 6-10, 2023</td>
@@ -212,7 +209,7 @@ nav-menu: true
 <td>US Navy</td>
 <td>Technical Director</td>
 <td>Halo</td>
-<td align="right">67</td>
+
 </tr>
 <tr>
 <td>Nov 28, 29, 2023</td>
@@ -221,7 +218,7 @@ nav-menu: true
 <td>Nike</td>
 <td>Technical Director</td>
 <td>Talkshow</td>
-<td align="right">66</td>
+
 </tr>
 <tr>
 <td>Nov 10-22, 2023</td>
@@ -230,7 +227,7 @@ nav-menu: true
 <td>Monster</td>
 <td>Technical Director</td>
 <td>Modern Warfare</td>
-<td align="right">65</td>
+
 </tr>
 <tr>
 <td>Nov 1, 2023</td>
@@ -239,7 +236,7 @@ nav-menu: true
 <td>Nike</td>
 <td>Engineer In Charge</td>
 <td>Talkshow</td>
-<td align="right">64</td>
+
 </tr>
 <tr>
 <td>Oct 20-22, 2023</td>
@@ -248,7 +245,7 @@ nav-menu: true
 <td>Momentum</td>
 <td>GFX Operator</td>
 <td>Powerwash, Halo</td>
-<td align="right">63</td>
+
 </tr>
 <tr>
 <td>Oct 19, 2023</td>
@@ -257,7 +254,7 @@ nav-menu: true
 <td>AT&amp;T</td>
 <td>Technical Director</td>
 <td>Talkshow</td>
-<td align="right">62</td>
+
 </tr>
 <tr>
 <td>Sep 26, 2023</td>
@@ -266,7 +263,7 @@ nav-menu: true
 <td>@WillProduces</td>
 <td>Producer/TD/EIC/A1</td>
 <td>Dungeons &amp; Dragons</td>
-<td align="right">61</td>
+
 </tr>
 <tr>
 <td>Sep 19-24, 2023</td>
@@ -275,7 +272,7 @@ nav-menu: true
 <td>Riot Games</td>
 <td>Technical Director</td>
 <td>Valorant</td>
-<td align="right">60</td>
+
 </tr>
 <tr>
 <td>Sep 13, 2023</td>
@@ -284,7 +281,7 @@ nav-menu: true
 <td>Gen.G</td>
 <td>Producer/Technical Director</td>
 <td>NBA2K</td>
-<td align="right">59</td>
+
 </tr>
 <tr>
 <td>Sep 6, 2023</td>
@@ -293,7 +290,7 @@ nav-menu: true
 <td>Twitch</td>
 <td>Encoding Engineer</td>
 <td>NBA2K</td>
-<td align="right">58</td>
+
 </tr>
 <tr>
 <td>Aug - Sep, 2023</td>
@@ -302,7 +299,7 @@ nav-menu: true
 <td>Pdager Entertainment LLC</td>
 <td>Producer/Technical Director</td>
 <td>Dota2</td>
-<td align="right">57</td>
+
 </tr>
 <tr>
 <td>Sep 3, 2023</td>
@@ -311,7 +308,7 @@ nav-menu: true
 <td>Battlefy</td>
 <td>Broadcast Technician</td>
 <td>Apex: Legends</td>
-<td align="right">56</td>
+
 </tr>
 <tr>
 <td>Aug 1, 2023</td>
@@ -320,7 +317,7 @@ nav-menu: true
 <td>US Air Force</td>
 <td>Broadcast Technician</td>
 <td>Various</td>
-<td align="right">55</td>
+
 </tr>
 <tr>
 <td>Aug 31, 2023</td>
@@ -329,7 +326,7 @@ nav-menu: true
 <td>US Navy</td>
 <td>Technical Director</td>
 <td>Modern Warfare</td>
-<td align="right">54</td>
+
 </tr>
 <tr>
 <td>Jul 18, 2023</td>
@@ -338,7 +335,7 @@ nav-menu: true
 <td>@WillProduces</td>
 <td>Producer/Technical Director</td>
 <td>Dungeons &amp; Dragons</td>
-<td align="right">53</td>
+
 </tr>
 <tr>
 <td>Jun 2023 - Aug 2023</td>
@@ -347,7 +344,7 @@ nav-menu: true
 <td>Rally Cry/Riot Games</td>
 <td>Broadcast Technician</td>
 <td>League of Legends</td>
-<td align="right">52</td>
+
 </tr>
 <tr>
 <td>Jul 1, 2023</td>
@@ -356,7 +353,7 @@ nav-menu: true
 <td>AT&amp;T</td>
 <td>Observer</td>
 <td>Various</td>
-<td align="right">51</td>
+
 </tr>
 <tr>
 <td>Jul 8, 2022</td>
@@ -365,7 +362,7 @@ nav-menu: true
 <td>AT&amp;T</td>
 <td>Observer</td>
 <td>Various</td>
-<td align="right">50</td>
+
 </tr>
 <tr>
 <td>Jun 2022 - Apr 2023</td>
@@ -374,7 +371,7 @@ nav-menu: true
 <td>Community Gaming</td>
 <td>Producer/Technical Director</td>
 <td>Various</td>
-<td align="right">49</td>
+
 </tr>
 <tr>
 <td>Nov 5, 2021</td>
@@ -383,7 +380,7 @@ nav-menu: true
 <td>Various Web3 Orgs</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">48</td>
+
 </tr>
 <tr>
 <td>Oct 9, 2021</td>
@@ -392,7 +389,7 @@ nav-menu: true
 <td>Pittsburgh Knights</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">47</td>
+
 </tr>
 <tr>
 <td>Oct 6, 2021</td>
@@ -401,7 +398,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">46</td>
+
 </tr>
 <tr>
 <td>Sep 29, 2021</td>
@@ -410,7 +407,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">45</td>
+
 </tr>
 <tr>
 <td>Sep 27, 2021</td>
@@ -419,7 +416,7 @@ nav-menu: true
 <td>Pittsburgh Knights</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">44</td>
+
 </tr>
 <tr>
 <td>Sep 25, 2021</td>
@@ -428,7 +425,7 @@ nav-menu: true
 <td>BrookLAN</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">43</td>
+
 </tr>
 <tr>
 <td>Sep 22, 2021</td>
@@ -437,7 +434,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">42</td>
+
 </tr>
 <tr>
 <td>Sep 8, 2021</td>
@@ -446,7 +443,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">41</td>
+
 </tr>
 <tr>
 <td>Aug 30, 2021</td>
@@ -455,7 +452,7 @@ nav-menu: true
 <td>Pittsburgh Knights</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">40</td>
+
 </tr>
 <tr>
 <td>Aug 21, 2021</td>
@@ -464,7 +461,7 @@ nav-menu: true
 <td>Pittsburgh Knights</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">39</td>
+
 </tr>
 <tr>
 <td>Jun 30, 2021</td>
@@ -473,7 +470,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">38</td>
+
 </tr>
 <tr>
 <td>Jun 25, 2021</td>
@@ -482,7 +479,7 @@ nav-menu: true
 <td>Community Gaming</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">37</td>
+
 </tr>
 <tr>
 <td>Jun 23, 2021</td>
@@ -491,7 +488,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">36</td>
+
 </tr>
 <tr>
 <td>Jun 16, 2021</td>
@@ -500,7 +497,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">35</td>
+
 </tr>
 <tr>
 <td>Jun 2, 2021</td>
@@ -509,7 +506,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">34</td>
+
 </tr>
 <tr>
 <td>May 15, 2021</td>
@@ -518,7 +515,7 @@ nav-menu: true
 <td>15Kings</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">33</td>
+
 </tr>
 <tr>
 <td>May 12, 2021</td>
@@ -527,7 +524,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">32</td>
+
 </tr>
 <tr>
 <td>May 5, 2021</td>
@@ -536,7 +533,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">31</td>
+
 </tr>
 <tr>
 <td>Apr 28, 2021</td>
@@ -545,7 +542,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">30</td>
+
 </tr>
 <tr>
 <td>Apr 21, 2021</td>
@@ -554,7 +551,7 @@ nav-menu: true
 <td>Pittsburgh Knights</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">29</td>
+
 </tr>
 <tr>
 <td>Apr 21, 2021</td>
@@ -563,7 +560,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">28</td>
+
 </tr>
 <tr>
 <td>Apr 14, 2021</td>
@@ -572,7 +569,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">27</td>
+
 </tr>
 <tr>
 <td>Apr 7, 2021</td>
@@ -581,7 +578,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">26</td>
+
 </tr>
 <tr>
 <td>Mar 31, 2021</td>
@@ -590,7 +587,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">25</td>
+
 </tr>
 <tr>
 <td>Mar 22, 2021</td>
@@ -599,7 +596,7 @@ nav-menu: true
 <td>Pittsburgh Knights</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">24</td>
+
 </tr>
 <tr>
 <td>Mar 17, 2021</td>
@@ -608,7 +605,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">23</td>
+
 </tr>
 <tr>
 <td>Mar 11, 2021</td>
@@ -617,7 +614,7 @@ nav-menu: true
 <td>PlayerZone</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">22</td>
+
 </tr>
 <tr>
 <td>Mar 10, 2021</td>
@@ -626,7 +623,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">21</td>
+
 </tr>
 <tr>
 <td>Mar 5, 2021</td>
@@ -635,7 +632,7 @@ nav-menu: true
 <td>Able Esports</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">20</td>
+
 </tr>
 <tr>
 <td>Mar 3, 2021</td>
@@ -644,7 +641,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">19</td>
+
 </tr>
 <tr>
 <td>Feb 24, 2021</td>
@@ -653,7 +650,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">18</td>
+
 </tr>
 <tr>
 <td>Feb 22, 2021</td>
@@ -662,7 +659,7 @@ nav-menu: true
 <td>Hyperspace Dark</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">17</td>
+
 </tr>
 <tr>
 <td>Feb 15, 2021</td>
@@ -671,7 +668,7 @@ nav-menu: true
 <td>Spectral Esports</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">16</td>
+
 </tr>
 <tr>
 <td>Feb 10, 2021</td>
@@ -680,7 +677,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">15</td>
+
 </tr>
 <tr>
 <td>Feb 8, 2021</td>
@@ -689,7 +686,7 @@ nav-menu: true
 <td>TLP</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">14</td>
+
 </tr>
 <tr>
 <td>Feb 3, 2021</td>
@@ -698,7 +695,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">13</td>
+
 </tr>
 <tr>
 <td>Jan 27, 2021</td>
@@ -707,7 +704,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">12</td>
+
 </tr>
 <tr>
 <td>Jan 20, 2021</td>
@@ -716,7 +713,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">11</td>
+
 </tr>
 <tr>
 <td>Jan 13, 2021</td>
@@ -725,7 +722,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">10</td>
+
 </tr>
 <tr>
 <td>Jan 8, 2021</td>
@@ -734,7 +731,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">9</td>
+
 </tr>
 <tr>
 <td>Jan 6, 2021</td>
@@ -743,7 +740,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">8</td>
+
 </tr>
 <tr>
 <td>Jan 2, 2021</td>
@@ -752,7 +749,7 @@ nav-menu: true
 <td>Team Serenity</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">7</td>
+
 </tr>
 <tr>
 <td>Dec 30, 2020</td>
@@ -761,7 +758,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">6</td>
+
 </tr>
 <tr>
 <td>Nov 8, 2020</td>
@@ -770,7 +767,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">5</td>
+
 </tr>
 <tr>
 <td>Oct 17, 2020</td>
@@ -779,7 +776,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">4</td>
+
 </tr>
 <tr>
 <td>Oct 3, 2020</td>
@@ -788,7 +785,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">3</td>
+
 </tr>
 <tr>
 <td>Sep 26, 2020</td>
@@ -797,7 +794,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">2</td>
+
 </tr>
 <tr>
 <td>Sep 19, 2020</td>
@@ -806,7 +803,7 @@ nav-menu: true
 <td>GLG</td>
 <td>Producer/Technical Director</td>
 <td>Valorant</td>
-<td align="right">1</td>
+
 </tr>
 </tbody></table>
 </div>
