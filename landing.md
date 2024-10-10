@@ -70,7 +70,7 @@ nav-menu: true
 		</header>
 		<p></p>
 		<ul class="actions">
-			<li><a href="generic.html" class="button next">Click Here</a></li>
+			<li><a href="pastevents.html" class="button next">Click Here</a></li>
 		</ul>
 	</div>
 </section>
