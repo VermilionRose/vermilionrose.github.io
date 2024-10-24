@@ -15,7 +15,16 @@ nav-menu: true
 <th title="Field #5">Role</th>
 <th title="Field #6">Type/Game</th>
 </tr></thead>
-<tbody><tr>
+<tbody>
+<tr>
+<td>Oct 17, 2024</td>
+<td>SMT w/ Gabe Saglie for F1 Promotion in Las Vegas</td>
+<td>WAVDWGS</td>
+<td>Live Star Entertainment</td>
+<td>Technical Director</td>
+<td>SMT</td>
+</tr>
+<tr>
 <td>Oct 9, 2024</td>
 <td>Should the US Still Police the World</td>
 <td>WAVDWGS</td>

@@ -43,7 +43,7 @@ nav-menu: true
 				<header class="major">
 					<h3>The Spring Break That Never Ended</h3>
 				</header>
-				<p>Graduated right into COVID-19 lockdown. However, that did not stop me from learning my absolutely favorite tool in broadcast to this day, a software switcher named vMix. This tool is my bread and butter, combining a powerful switcher limited by hardware rather than software paired with a built-in graphics designer perfect for the remote shows that an isolated world demanded. Great Lakes Gaming of Rochester gave me my start and I'll always remember than fondly, taking a shot at a new rookie in the field and from there, my carreer continued</p>
+				<p>Graduated right into COVID-19 lockdown. However, that did not stop me from learning my absolutely favorite tool in broadcast to this day, a software switcher named vMix. This tool is my bread and butter, combining a powerful switcher paired with a built-in graphics designer perfect for the remote shows that an isolated world demanded. Great Lakes Gaming of Rochester gave me my start and I'll always remember them fondly, taking a shot at a new rookie in the field and from there, my career continued</p>
 			</div>
 		</div>
 	</section>
