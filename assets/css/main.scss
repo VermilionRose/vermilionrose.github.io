@@ -36,20 +36,6 @@
 		)
 	));
 
-	@mixin inner {
-		> .inner {
-			@include padding(4em, 0);
-			margin: 0 auto;
-			max-width: _size(inner);
-			width: calc(100% - 6em);
-
-			@include breakpoint(small) {
-				@include padding(3em, 0);
-				width: calc(100% - 3em);
-			}
-		}
-	}
-
 // Base.
 
 	@import 'base/page';
@@ -78,3 +64,5 @@
 	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/menu';
+	@import 'layout/home';
+	@import 'layout/landing';

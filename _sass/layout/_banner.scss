@@ -24,16 +24,22 @@
 		position: relative;
 		top: -3.25em;
 
+		// Dark colour overlay + gradient bleed at the bottom edge so the banner
+		// transitions naturally into the content below rather than cutting hard.
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
+			background: linear-gradient(
+				to bottom,
+				transparentize(_palette(bg), 0.65) 0%,
+				transparentize(_palette(bg), 0.55) 60%,
+				_palette(bg) 100%
+			);
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.25;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -95,21 +101,23 @@
 		}
 
 		&.major {
-			height: 75vh;
-			min-height: 30em;
-			max-height: 50em;
+			height: 70vh;
+			min-height: 28em;
+			max-height: 42em;
 
 			&.alt {
-				  opacity: 0.75;
+				opacity: 0.75;
 			}
 		}
 
-		&.style1 { &:after { background-color: _palette(accent1); } }
-		&.style2 { &:after { background-color: _palette(accent2); } }
-		&.style3 { &:after { background-color: _palette(accent3); } }
-		&.style4 { &:after { background-color: _palette(accent4); } }
-		&.style5 { &:after { background-color: _palette(accent5); } }
-		&.style6 { &:after { background-color: _palette(accent6); } }
+		// Style variants override the gradient with a tinted overlay so landing
+		// pages can dial in their own accent colour while still fading to bg.
+		&.style1 { &:after { background: linear-gradient(to bottom, transparentize(_palette(accent1), 0.35) 0%, _palette(bg) 100%); } }
+		&.style2 { &:after { background: linear-gradient(to bottom, transparentize(_palette(accent2), 0.35) 0%, _palette(bg) 100%); } }
+		&.style3 { &:after { background: linear-gradient(to bottom, transparentize(_palette(accent3), 0.35) 0%, _palette(bg) 100%); } }
+		&.style4 { &:after { background: linear-gradient(to bottom, transparentize(_palette(accent4), 0.35) 0%, _palette(bg) 100%); } }
+		&.style5 { &:after { background: linear-gradient(to bottom, transparentize(_palette(accent5), 0.35) 0%, _palette(bg) 100%); } }
+		&.style6 { &:after { background: linear-gradient(to bottom, transparentize(_palette(accent6), 0.35) 0%, _palette(bg) 100%); } }
 
 		body.is-loading & {
 			&:after {

@@ -1,0 +1,34 @@
+///
+/// Landing page — layout-specific styles for the landing (bio/about) page.
+/// Targets sections that only appear in _layouts/landing.html.
+///
+
+/* Landing */
+
+	// Banner: landing uses style2 (accent2 overlay). Pull the h1 down a touch
+	// so the image has more visual breathing room above the fold.
+	#banner.style2 {
+		> .inner {
+			header.major {
+				h1 {
+					font-size: 2.75em;
+				}
+			}
+		}
+
+		@include breakpoint(small) {
+			> .inner {
+				header.major {
+					h1 {
+						font-size: 1.75em;
+					}
+				}
+			}
+		}
+	}
+
+	// Spotlights wrapper: strip the forced bg-alt tint so _spotlights.scss
+	// controls all background colors from a single place.
+	.spotlights {
+		border-top: solid 1px _palette(border);
+	}

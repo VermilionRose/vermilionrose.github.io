@@ -16,21 +16,16 @@
 		> section {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
-			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
+			// Odd rows: olive-green surface matches the header — feels "branded".
+		background-color: _palette(bg-alt);
 
+			// Uses .image.fit from _image.scss — only structural and overlay rules live here.
 			> .image {
 				background-position: center center;
 				background-size: cover;
-				border-radius: 0;
-				display: block;
+				margin: 0; // cancel .fit bottom margin inside spotlights
 				position: relative;
 				width: 30%;
-
-				img {
-					border-radius: 0;
-					display: block;
-					width: 100%;
-				}
 
 				&:before {
 					background: transparentize(_palette(bg), 0.1);
@@ -62,7 +57,8 @@
 
 			&:nth-child(2n) {
 				@include vendor('flex-direction', 'row-reverse');
-				background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
+				// Even rows: dark surface creates strong contrast with the olive-green rows.
+				background-color: _palette(surface);
 
 				> .content {
 					@include vendor('align-items', 'flex-end');

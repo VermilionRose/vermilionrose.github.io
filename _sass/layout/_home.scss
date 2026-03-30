@@ -1,0 +1,28 @@
+///
+/// Home page — layout-specific styles for the home (index) page.
+/// Targets sections that only appear in _layouts/home.html.
+///
+
+/* Home */
+
+	// Tiles section (#one) — no overrides needed; handled by _tiles.scss.
+
+	// About Me section (#two) — use surface color to lift it off the tiles above.
+	#two {
+		background-color: _palette(surface);
+
+		// Tighten the inner text column so long-form bio reads comfortably.
+		> .inner {
+			> p {
+				max-width: 42em;
+			}
+		}
+
+		@include breakpoint(small) {
+			> .inner {
+				> p {
+					max-width: 100%;
+				}
+			}
+		}
+	}

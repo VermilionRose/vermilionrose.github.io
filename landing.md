@@ -22,7 +22,7 @@ nav-menu: true
 <!-- Two -->
 <section id="two" class="spotlights">
 	<section>
-		<a href="portfolio.html" class="image">
+		<a href="portfolio.html" class="image fit">
 			<img src="{% link assets/images/doggo.jpg %}" alt="" data-position="center left" />
 		</a>
 		<div class="content">
@@ -35,7 +35,7 @@ nav-menu: true
 		</div>
 	</section>
 	<section>
-		<a href="portfolio.html" class="image">
+		<a href="portfolio.html" class="image fit">
 			<img src="{% link assets/images/glg_cover.png %}" alt="" data-position="top center" />
 		</a>
 		<div class="content">
@@ -48,7 +48,7 @@ nav-menu: true
 		</div>
 	</section>
 	<section>
-		<a href="portfolio.html" class="image">
+		<a href="portfolio.html" class="image fit">
 			<img src="{% link assets/images/cblol_multiview.PNG %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
