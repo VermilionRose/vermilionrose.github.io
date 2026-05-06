@@ -1,0 +1,103 @@
+---
+// Contact
+---
+
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2>Let's work together</h2>
+    <p class="contact-sub">
+      Booking inquiries, show questions, or just want to talk production &mdash;
+      reach out directly.
+    </p>
+
+    <div class="contact-grid">
+      <a href="mailto:contact@vermilionrose.me" class="card contact-card">
+        <span class="contact-icon">✉</span>
+        <div>
+          <p class="contact-label">Email</p>
+          <p class="contact-value">contact@vermilionrose.me</p>
+        </div>
+      </a>
+
+      <a href="tel:+19175260455" class="card contact-card">
+        <span class="contact-icon">📞</span>
+        <div>
+          <p class="contact-label">Phone</p>
+          <p class="contact-value">+1 917 526 0455</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/vermilionrose" target="_blank" rel="noopener" class="card contact-card">
+        <span class="contact-icon">⌨</span>
+        <div>
+          <p class="contact-label">GitHub</p>
+          <p class="contact-value">vermilionrose</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Testimonials placeholder — to be added once collected -->
+    <!--
+    <div class="testimonials">
+      <h3>What people say</h3>
+      ...
+    </div>
+    -->
+  </div>
+</section>
+
+<style>
+  h2 { margin-bottom: 0.5rem; }
+
+  .contact-sub {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+
+  .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .contact-card:hover {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  .contact-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .contact-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-alt);
+    margin-bottom: 0.15rem;
+    max-width: none;
+  }
+
+  .contact-value {
+    font-size: 0.95rem;
+    color: var(--blush);
+    max-width: none;
+    overflow-wrap: break-word;
+  }
+</style>

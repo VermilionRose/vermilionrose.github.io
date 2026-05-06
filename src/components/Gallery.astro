@@ -1,0 +1,173 @@
+---
+// Gallery — portfolio images with captions
+// NOTE: Files with .PNG (uppercase) extension must be renamed to .png before deployment
+// to avoid case-sensitivity failures on GitHub Pages (Linux).
+// Affected: desk.PNG, cblol_multiview.PNG, cblol_multiview_2.PNG, dashboard_node_glg.PNG
+//
+// NOTE: PXL_20260314 needs to be blurred/redacted before publishing (Inception Studios, private client)
+
+const photos = [
+  // 2026
+  { file: "PXL_20260501_211257190.jpg",       caption: "Navy MWR Broadcast",                                        role: "Lead Producer / TD" },
+  { file: "PXL_20260331_164858908.MP.jpg",    caption: "Remote office — Salesforce Slackbot Announcement",          role: "Remote TD" },
+  { file: "PXL_20260331_165421865.MP.jpg",    caption: "Remote office — Salesforce Slackbot Announcement",          role: "Remote TD" },
+  { file: "PXL_20260314_110950870.MP.png",    caption: "Corporate production — Inception Studios NJ",               role: "Technical Director" },
+  { file: "PXL_20260307_044708194.jpg",       caption: "International Battle of the Badges",                        role: "Encoding Engineer" },
+  { file: "PXL_20260114_160606968.jpg",       caption: "AT&T Playoff Fan Central — Miami Beach Convention Center",  role: "Gameplay Director" },
+  { file: "PXL_20260114_160637815.jpg",       caption: "AT&T Playoff Fan Central — Miami Beach Convention Center",  role: "Gameplay Director" },
+  { file: "PXL_20260116_140631850.MP.jpg",    caption: "AT&T Playoff Fan Central — Miami Beach Convention Center",  role: "Gameplay Director" },
+  // { file: "PXL_20260108_211515168.jpg", caption: "Navy MWR Broadcast", role: "—" },
+  // ^^^ Another Navy MWR show — ignored per Rose (duplicate coverage, similar shot)
+
+  // 2025
+  { file: "PXL_20251205_162307756.MP.jpg",    caption: "—",                                                         role: "—" },
+  // ^^^ ignored per Rose — kept commented if needed later
+  { file: "PXL_20251113_151518997.jpg",       caption: "Corporate production",                                      role: "Producer" },
+  { file: "PXL_20251106_191048683.jpg",       caption: "Pandora — Stream tech",                                     role: "Stream Engineer" },
+  { file: "PXL_20251007_200542602.MP.jpg",    caption: "Critical Role — Mighty Nein Wedding, Radio City Music Hall", role: "GFX Operator" },
+  { file: "PXL_20251007_223030150.MP.jpg",    caption: "Critical Role — Mighty Nein Wedding, Radio City Music Hall", role: "GFX Operator" },
+  { file: "PXL_20251007_172654344.jpg",       caption: "Critical Role — Mighty Nein Wedding, Radio City Music Hall", role: "GFX Operator" },
+  { file: "PXL_20251007_172549586.MP.jpg",    caption: "Critical Role — Mighty Nein Wedding, Radio City Music Hall", role: "GFX Operator" },
+  { file: "PXL_20251007_150523187.jpg",       caption: "Critical Role — Mighty Nein Wedding, Radio City Music Hall", role: "GFX Operator" },
+  { file: "PXL_20251007_150511404.jpg",       caption: "Critical Role — Mighty Nein Wedding, Radio City Music Hall", role: "GFX Operator" },
+  { file: "PXL_20250922_201146160.MP.jpg",    caption: "Unstoppable Africa 2025",                                   role: "Encoding Engineer" },
+
+  // 2024 and earlier — original set
+  { file: "yugioh_control_room.jpg",          caption: "Yu-Gi-Oh World Champions 2024 — Control room",              role: "TD" },
+  { file: "yugioh_gamer_pose.jpg",            caption: "Yu-Gi-Oh World Champions 2024",                             role: "TD" },
+  { file: "cblol_cover.png",                  caption: "CBLOL English Broadcast",                                   role: "Producer / TD" },
+  { file: "cblol_multiview.PNG",              caption: "CBLOL — Multiview",                                        role: "Producer / TD" },
+  { file: "cblol_multiview_2.PNG",            caption: "CBLOL — Multiview",                                        role: "Producer / TD" },
+  { file: "nacl_cover.png",                   caption: "NACL Qualifiers",                                           role: "Broadcast Engineer" },
+  { file: "valorant_block_party.jpg",         caption: "Valorant Block Party",                                      role: "Game Admin" },
+  { file: "nba2k_launch.jpg",                 caption: "NBA2K24 Launch",                                            role: "Encoding Engineer" },
+  { file: "att_roadshow.png",                 caption: "AT&T Roadshow",                                             role: "TD" },
+  { file: "att_roadshow_2.png",               caption: "AT&T Roadshow",                                             role: "TD" },
+  { file: "free_press_debate.jpg",            caption: "Should the US Still Police the World — The Free Press",     role: "TD" },
+  { file: "play_one_up.png",                  caption: "Play One Up",                                               role: "GFX Operator" },
+  { file: "axiecon.png",                      caption: "Axie Con",                                                  role: "Broadcast Engineer / TD" },
+  { file: "bornless.png",                     caption: "Bornless Broadcast",                                        role: "TD" },
+  { file: "knights_forge_cover.jpg",          caption: "Pittsburgh Knight's Gauntlets",                             role: "TD" },
+  { file: "glg_cover.png",                    caption: "Great Lakes Gaming",                                        role: "Operator" },
+  { file: "dashboard_node_glg.PNG",           caption: "Great Lakes Gaming — Dashboard",                            role: "Build" },
+
+  // Technical / setup shots
+  { file: "sheets_controller.png",            caption: "Custom Google Sheets vMix controller",                      role: "Build" },
+  { file: "integrated_champ_select.png",      caption: "Integrated champion select overlay",                        role: "Graphics" },
+  { file: "integrated_rcvolus.png",           caption: "RC Volus graphics integration",                             role: "Graphics" },
+  { file: "talent_pred.png",                  caption: "Talent prediction overlay",                                 role: "Graphics" },
+  { file: "adaptable_schedule.png",           caption: "Production schedule system",                                role: "Build" },
+  { file: "tricaster_control.jpg",            caption: "Tricaster control room",                                    role: "—" },
+  { file: "quality_testing.jpg",              caption: "Quality testing",                                           role: "—" },
+  { file: "hard_at_work.jpg",                 caption: "On the desk",                                               role: "—" },
+  { file: "desk.PNG",                         caption: "Desk setup",                                                role: "—" },
+];
+
+// Filter out ignored/placeholder entries
+const visiblePhotos = photos.filter(p => p.caption !== "—" || p.role !== "—");
+---
+
+<section id="gallery">
+  <div class="container">
+    <p class="section-label">Gallery</p>
+    <h2>On the desk and in the room</h2>
+
+    <div class="gallery-grid">
+      {visiblePhotos.map((p) => (
+        <figure class="gallery-item">
+          <img
+            src={`/images/${p.file}`}
+            alt={p.caption}
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="caption-text">{p.caption}</span>
+            {p.role !== "—" && <span class="pill">{p.role}</span>}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 { margin-bottom: 2rem; }
+
+  .gallery-grid {
+    columns: 4;
+    column-gap: 0.5rem;
+  }
+
+  .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    position: relative;
+    cursor: default;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.03);
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 0.75rem 0.6rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .gallery-item:hover figcaption {
+    opacity: 1;
+  }
+
+  .caption-text {
+    font-size: 0.75rem;
+    color: #fff;
+    line-height: 1.3;
+  }
+
+  .pill {
+    font-size: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  /* Mobile: show captions statically below, drop to fewer columns */
+  @media (max-width: 900px) {
+    .gallery-grid { columns: 3; }
+  }
+
+  @media (max-width: 600px) {
+    .gallery-grid {
+      columns: 2;
+      column-gap: 0.4rem;
+    }
+
+    figcaption {
+      position: static;
+      background: none;
+      opacity: 1;
+      padding: 0.4rem 0.5rem;
+    }
+
+    .caption-text { color: var(--text-muted); }
+  }
+</style>

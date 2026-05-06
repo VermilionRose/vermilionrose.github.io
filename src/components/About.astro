@@ -1,0 +1,120 @@
+---
+// About — approved bio (May 2026)
+---
+
+<section id="about">
+  <div class="container">
+    <p class="section-label">About</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm Rose &mdash; a vMix operator, graphics integrator, and engineer in charge
+          based in New York City. Since 2019 I've been running desks at esports tournaments,
+          corporate roadshows, satellite media tours, concerts, and live broadcasts, making
+          sure the show goes out clean and on time.
+        </p>
+        <p>
+          I got into production sideways. Digital Humanities degree from RIT, a League of
+          Legends casting gig in college, and a lot of hours during the COVID lockdown teaching
+          myself vMix from the ground up. What started as necessity turned into a career I've
+          built deliberately. My edge is on the technical side &mdash; custom graphics integration,
+          XML and API-driven data sources, VB.NET scripting for vMix automation, and building
+          the kind of dashboards that let a small crew punch above their weight.
+        </p>
+        <p>
+          I operate through Rose Media Group and work locally in New York and regionally to
+          DC and Boston. For esports productions, I'm also available remote &mdash; running a
+          dedicated studio set up for multi-caller shows at 1080p60 with records.
+        </p>
+        <p>
+          If you're looking for someone who can own the desk, own the technical decisions,
+          and keep the show moving &mdash; let's talk.
+        </p>
+      </div>
+
+      <aside class="about-aside">
+        <img src="/images/rose_about.jpg" alt="Rose — Rose Media Group" class="about-photo" />
+
+        <div class="about-quick">
+          <div class="quick-item">
+            <span class="quick-label">Based</span>
+            <span>New York City</span>
+          </div>
+          <div class="quick-item">
+            <span class="quick-label">LLC</span>
+            <span>Rose Media Group</span>
+          </div>
+          <div class="quick-item">
+            <span class="quick-label">Since</span>
+            <span>2019</span>
+          </div>
+          <div class="quick-item">
+            <span class="quick-label">Coverage</span>
+            <span>NYC · DC · Boston · Remote (esports)</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 2rem;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .about-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 80px;
+  }
+
+  .about-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    display: block;
+  }
+
+  .about-quick {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .quick-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 0.9rem;
+  }
+
+  .quick-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-alt);
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+    .about-aside { position: static; }
+  }
+</style>

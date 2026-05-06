@@ -1,0 +1,97 @@
+---
+// Gear
+---
+
+<section id="gear">
+  <div class="container">
+    <p class="section-label">Gear</p>
+    <h2>What I bring</h2>
+
+    <div class="gear-grid">
+      <div class="card">
+        <h3>vMix workstation</h3>
+        <span class="pill">Production rig</span>
+        <ul>
+          <li>Intel i9-12900K</li>
+          <li>NVIDIA RTX 3080Ti</li>
+          <li>32GB RAM</li>
+          <li>Windows — vMix native</li>
+          <li>Home studio / remote production</li>
+        </ul>
+        <p class="gear-note">
+          Purpose-built for live show switching, graphics integration, and
+          multi-caller remote production at 1080p60 with records.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Field kit</h3>
+        <span class="pill">Fly-pack essentials</span>
+        <ul>
+          <li>SDI barrels &amp; adapters</li>
+          <li>USB drives (multiple)</li>
+          <li>Assorted cables</li>
+          <li>Box cutters, pens, pencils</li>
+          <li>Show-day necessities (6 years refined)</li>
+        </ul>
+        <p class="gear-note">
+          Assembled over six years of on-site work. Everything that's saved
+          a show at some point is in this bag.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>MacBook</h3>
+        <span class="pill">Mobile</span>
+        <ul>
+          <li>Remote access &amp; monitoring</li>
+          <li>Light production tasks</li>
+          <li>Travels to every show</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 { margin-bottom: 2rem; }
+
+  .gear-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .card h3 { margin-bottom: 0.5rem; }
+  .card .pill { margin-bottom: 1rem; display: inline-block; }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--accent-alt);
+  }
+
+  .gear-note {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
+    margin-top: 0.25rem;
+  }
+</style>

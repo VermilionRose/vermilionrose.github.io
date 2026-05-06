@@ -1,0 +1,106 @@
+---
+// Services
+const services = [
+  {
+    title: 'vMix Operator',
+    tag: 'on-site · remote',
+    tagType: 'both',
+    description:
+      'Live show switching from the desk. Comfortable running full productions solo or slotting into larger crews as the dedicated switcher.',
+  },
+  {
+    title: 'Graphics Integration',
+    tag: 'on-site · remote',
+    tagType: 'both',
+    description:
+      'Custom overlays, animated packages, XML and API-driven data sources. If your show needs live data in the graphics, that\'s a specialty — not an afterthought.',
+  },
+  {
+    title: 'Engineer in Charge (EIC)',
+    tag: 'on-site',
+    tagType: 'onsite',
+    description:
+      'Signal flow ownership, troubleshooting under pressure, show leadership. The person who knows every cable and every contingency before the show goes live.',
+  },
+  {
+    title: 'Data Engineer',
+    tag: 'on-site · remote',
+    tagType: 'both',
+    description:
+      'Custom data pipelines for live production. XML and API-driven vMix data sources, VB.NET scripting, and backend infrastructure that keeps graphics fed with live data throughout the show.',
+  },
+  {
+    title: 'Technical Director',
+    tag: 'on-site',
+    tagType: 'onsite',
+    description:
+      'Full TD role for smaller-to-midsize productions. Pre-production planning through post-show wrap.',
+  },
+  {
+    title: 'Associate Producer',
+    tag: 'on-site · remote',
+    tagType: 'both',
+    description:
+      'Rundown management, crew coordination, show-day problem solving. Comfortable stepping into AP responsibilities when the production needs it.',
+  },
+  {
+    title: 'Remote Esports Production',
+    tag: 'remote',
+    tagType: 'remote',
+    description:
+      'Dedicated home studio for multi-caller esports shows. 1080p60 with records. vMix switching, graphics, and data pipeline from a purpose-built remote rig.',
+  },
+];
+---
+
+<section id="services">
+  <div class="container">
+    <p class="section-label">Services</p>
+    <h2>What I do</h2>
+    <p class="services-sub">
+      Based in New York City &mdash; available locally, regionally by train to DC and Boston,
+      and remote for esports.
+    </p>
+
+    <div class="services-grid">
+      {services.map((s) => (
+        <div class="card service-card">
+          <div class="service-header">
+            <h3>{s.title}</h3>
+            <span class={`pill ${s.tagType === 'remote' ? 'sage' : ''}`}>{s.tag}</span>
+          </div>
+          <p>{s.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 { margin-bottom: 0.5rem; }
+
+  .services-sub {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .service-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    max-width: none;
+  }
+</style>

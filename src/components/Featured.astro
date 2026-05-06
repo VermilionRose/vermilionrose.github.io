@@ -1,0 +1,115 @@
+---
+// Featured — 4 highlighted shows with story context
+const featured = [
+  {
+    event: "Yu-Gi-Oh World Champions 2024",
+    client: "OS Studios",
+    role: "Technical Director",
+    year: "2024",
+    story:
+      "TD on the main stream for one of the largest Yu-Gi-Oh tournaments in the world. Devised and implemented a method to run dual-language graphics through a single switcher — a technical solution that eliminated the need for a second production chain and kept the broadcast clean across both feeds.",
+  },
+  {
+    event: "Critical Role — Mighty Nein Wedding",
+    client: "Critical Role",
+    role: "GFX Operator",
+    year: "2025",
+    story:
+      "GFX Operator for the live wedding special of Mighty Nein characters Jester and Fjord, performed in front of a packed house at Radio City Music Hall. A high-profile live event with a passionate, watchful audience — the kind of show where every graphic cue has to land perfectly.",
+  },
+  {
+    event: "Salesforce — Remote Production",
+    client: "Super Tempo Productions",
+    role: "Remote Technical Director",
+    year: "2024 & 2026",
+    story:
+      "Remote Technical Director for two separate Salesforce productions — Agentforce 2.0 and the Slackbot Announcement — operating vMix in the cloud via AWS. Demonstrates a modern remote production capability that brings full switching and graphics control to any show without physical presence.",
+  },
+  {
+    event: "Navy MWR Broadcast",
+    client: "OS Studios",
+    role: "Lead Producer / Technical Director",
+    year: "Ongoing",
+    story:
+      "Started as Technical Director for the Navy Morale, Welfare and Recreation broadcast and grew into the Lead Producer role. An ongoing engagement that spans both the technical and editorial sides of production.",
+  },
+];
+---
+
+<section id="featured">
+  <div class="container">
+    <p class="section-label">Featured</p>
+    <h2>Select work</h2>
+    <p class="featured-sub">A few shows worth telling the story behind.</p>
+
+    <div class="featured-grid">
+      {featured.map((f) => (
+        <article class="featured-card card">
+          <div class="featured-meta">
+            <span class="pill sage">{f.role}</span>
+            <span class="featured-year">{f.year}</span>
+          </div>
+          <h3>{f.event}</h3>
+          <p class="featured-client">{f.client}</p>
+          <p class="featured-story">{f.story}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 { margin-bottom: 0.5rem; }
+
+  .featured-sub {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .featured-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .featured-year {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  h3 { font-size: 1.1rem; }
+
+  .featured-client {
+    font-size: 0.78rem;
+    color: var(--accent-alt);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    max-width: none;
+  }
+
+  .featured-story {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-top: 0.25rem;
+    max-width: none;
+  }
+
+  @media (max-width: 600px) {
+    .featured-grid { grid-template-columns: 1fr; }
+  }
+</style>

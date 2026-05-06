@@ -1,0 +1,84 @@
+---
+// Hero — above the fold
+// Tagline combines Options A + C (approved May 2026)
+---
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <img src="/images/rose_logo_white.png" alt="Rose Media Group" class="hero-logo" />
+
+      <p class="hero-eyebrow">Rose &mdash; Rose Media Group</p>
+
+      <h1>Live production,<br />engineered.</h1>
+
+      <p class="hero-tagline">
+        Since 2019 &mdash; from esports arenas to corporate stages.<br />
+        <span class="roles">
+          vMix Operator &middot; Graphics Integrator &middot; Engineer in Charge &middot; Data Engineer
+        </span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#credits" class="btn btn-outline">See my work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #hero {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184 106 124 / 0.12) 0%, transparent 70%),
+      var(--bg);
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 6rem 0 4rem;
+  }
+
+  .hero-logo {
+    height: 64px;
+    width: auto;
+    align-self: flex-start;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-alt);
+    max-width: none;
+  }
+
+  h1 {
+    color: var(--blush);
+  }
+
+  .hero-tagline {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: none;
+  }
+
+  .roles {
+    color: var(--blush);
+    font-weight: 600;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+</style>
