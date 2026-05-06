@@ -12,21 +12,21 @@
     </p>
 
     <div class="contact-grid">
-      <a href="mailto:contact@vermilionrose.me" class="card contact-card">
+      <button class="card contact-card" data-copy="contact@vermilionrose.me">
         <span class="contact-icon">✉</span>
         <div>
           <p class="contact-label">Email</p>
           <p class="contact-value">contact@vermilionrose.me</p>
         </div>
-      </a>
+      </button>
 
-      <a href="tel:+19175260455" class="card contact-card">
+      <button class="card contact-card" data-copy="+19175260455">
         <span class="contact-icon">📞</span>
         <div>
           <p class="contact-label">Phone</p>
           <p class="contact-value">+1 917 526 0455</p>
         </div>
-      </a>
+      </button>
 
       <a href="https://github.com/vermilionrose" target="_blank" rel="noopener" class="card contact-card">
         <span class="contact-icon">⌨</span>
@@ -36,6 +36,8 @@
         </div>
       </a>
     </div>
+
+    <p class="copy-hint">Tap email or phone to copy</p>
 
     <!-- Testimonials placeholder — to be added once collected -->
     <!--
@@ -72,11 +74,37 @@
     text-decoration: none;
     color: var(--text);
     transition: background 0.2s, border-color 0.2s;
+    /* reset button styles */
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--card-pad);
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
   }
 
   .contact-card:hover {
     border-color: var(--accent);
     color: var(--text);
+  }
+
+  .contact-card.copied {
+    border-color: var(--sage);
+  }
+
+  .contact-card.copied .contact-value {
+    color: var(--sage);
+  }
+
+  .copy-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    opacity: 0.6;
+    max-width: none;
   }
 
   .contact-icon {
@@ -99,5 +127,25 @@
     color: var(--blush);
     max-width: none;
     overflow-wrap: break-word;
+    transition: color 0.2s;
   }
 </style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const text = btn.dataset.copy!;
+      await navigator.clipboard.writeText(text);
+
+      const val = btn.querySelector('.contact-value')!;
+      const original = val.textContent;
+      val.textContent = 'Copied!';
+      btn.classList.add('copied');
+
+      setTimeout(() => {
+        val.textContent = original;
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+  });
+</script>
