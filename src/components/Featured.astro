@@ -89,6 +89,7 @@ const featured = [
   .featured-meta {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 0.75rem;
     margin-bottom: 0.25rem;
   }
@@ -119,5 +120,6 @@ const featured = [
 
   @media (max-width: 600px) {
     .featured-grid { grid-template-columns: 1fr; }
+    .featured-meta :global(.pill) { white-space: normal; }
   }
 </style>
