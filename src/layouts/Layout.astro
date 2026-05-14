@@ -8,6 +8,9 @@ const {
   title = 'Rose | Rose Media Group',
   description = 'vMix operator, graphics integrator, and engineer in charge. NYC-based live production freelancer.',
 } = Astro.props;
+
+const canonicalURL = 'https://vermilionrose.me';
+const ogImage = `${canonicalURL}/images/rose_logo_white.png`;
 ---
 
 <!doctype html>
@@ -17,7 +20,22 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/png" href="/images/rose_logo_white.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Rose Media Group" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
