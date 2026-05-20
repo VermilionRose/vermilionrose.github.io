@@ -55,6 +55,57 @@
       </div>
 
       <div class="card under-card">
+        <div class="under-icon">🎛</div>
+        <div>
+          <h3>Broadcast Production Toolkit</h3>
+          <span class="pill sage">Self-hosted</span>
+          <p>
+            A set of self-hosted production tools built to harden the show-night layer:
+            validation that catches silent failures before air, telemetry that surfaces
+            incidents as they happen, logs that survive past the truck. Each runs locally
+            with no framework dependencies, no CDN, no build pipeline &mdash; built for
+            show-day resilience over developer convenience.
+          </p>
+          <ul class="under-tools">
+            <li>
+              <strong>XYLIX</strong> &mdash; real-time stream-health dashboard: bitrate
+              trends, dropped-frame alerts, encoder state, and a timestamped incident
+              log on one screen.
+            </li>
+            <li>
+              <strong>EiC Check</strong> &mdash; pre-broadcast go/no-go validator.
+              Checks vMix state, integration endpoints, and dependency services in
+              parallel, surfacing what's missing before air rather than during.
+            </li>
+            <li>
+              <strong>Show Event Log</strong> &mdash; production log for show night.
+              Timestamped, category-tagged entries (segments, graphics calls, replays,
+              incidents) that become the post-show debrief source of truth.
+            </li>
+            <li>
+              <strong>GT Binding Validator</strong> &mdash; catches silent graphic-template
+              binding failures before air. Cross-references vMix GT field names against
+              the live data feed and flags mismatches the operator can fix.
+            </li>
+            <li>
+              <strong>Event show-day rundowns</strong> &mdash; per-show observer trackers,
+              draft boards, and bracket/scoring tools built to fit each event's format.
+              Shipped instances: CoD pick/ban, LoL rundown + draft, 2XKO rundown with
+              bracket and live game/round scoring.
+            </li>
+          </ul>
+          <ul class="under-stack">
+            <li><span class="pill">Python</span></li>
+            <li><span class="pill">Vanilla JS</span></li>
+            <li><span class="pill">vMix HTTP API</span></li>
+            <li><span class="pill">Chart.js</span></li>
+            <li><span class="pill">psutil</span></li>
+            <li><span class="pill">localStorage</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card under-card">
         <div class="under-icon">🌿</div>
         <div>
           <h3>Bramble Homelab</h3>
@@ -144,5 +195,25 @@
   .under-link:hover, .under-link:focus {
     color: var(--blush);
     border-bottom-color: var(--blush);
+  }
+
+  .under-tools {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .under-tools li {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    max-width: none;
+  }
+  .under-tools li strong {
+    color: var(--blush);
+    font-weight: 600;
+    margin-right: 0.25rem;
   }
 </style>
