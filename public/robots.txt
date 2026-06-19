@@ -1,0 +1,7 @@
+# https://vermilionrose.me — Rose Media Group
+# Public portfolio site; everything is crawlable.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://vermilionrose.me/sitemap-index.xml

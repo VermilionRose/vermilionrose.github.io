@@ -11,6 +11,70 @@ const {
 
 const canonicalURL = 'https://vermilionrose.me';
 const ogImage = `${canonicalURL}/images/rose_logo_white.png`;
+
+// Structured data (JSON-LD) — linked graph so search engines read Rose (Person),
+// Rose Media Group (ProfessionalService), and the site as one connected entity.
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': `${canonicalURL}/#rose`,
+      name: 'Rose',
+      jobTitle: ['vMix Operator', 'Broadcast Engineer', 'Graphics Integrator'],
+      url: canonicalURL,
+      image: ogImage,
+      email: 'contact@vermilionrose.me',
+      telephone: '+1-917-526-0455',
+      worksFor: { '@id': `${canonicalURL}/#rmg` },
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'New York',
+        addressRegion: 'NY',
+        addressCountry: 'US',
+      },
+      sameAs: ['https://github.com/vermilionrose'],
+    },
+    {
+      '@type': 'ProfessionalService',
+      '@id': `${canonicalURL}/#rmg`,
+      name: 'Rose Media Group',
+      url: canonicalURL,
+      image: ogImage,
+      description:
+        'Freelance live production and broadcast engineering — vMix operation, custom graphics integration, engineer-in-charge, and data-driven broadcast tooling. New York City based; available regionally and remote.',
+      founder: { '@id': `${canonicalURL}/#rose` },
+      email: 'contact@vermilionrose.me',
+      telephone: '+1-917-526-0455',
+      knowsAbout: [
+        'vMix',
+        'Live broadcast production',
+        'Esports broadcast',
+        'Graphics integration',
+        'Engineer in charge',
+        'Data engineering for live graphics',
+      ],
+      areaServed: [
+        { '@type': 'City', name: 'New York City' },
+        { '@type': 'City', name: 'Washington, D.C.' },
+        { '@type': 'City', name: 'Boston' },
+      ],
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'New York',
+        addressRegion: 'NY',
+        addressCountry: 'US',
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${canonicalURL}/#website`,
+      url: canonicalURL,
+      name: 'Rose Media Group',
+      publisher: { '@id': `${canonicalURL}/#rmg` },
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -36,6 +100,10 @@ const ogImage = `${canonicalURL}/images/rose_logo_white.png`;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+
+    <!-- Structured data (JSON-LD) -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
