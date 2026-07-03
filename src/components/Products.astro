@@ -1,0 +1,164 @@
+---
+// Products — the broadcast platform Rose brings to a production.
+// Two client-facing services — LIANA + SPICA — running on a shared foundation, Trellis.
+// Cross-write surface: CALYX (prose + layout) / SCION (Trellis + build) / SPORE (SPICA + LIANA operate).
+// SCION build-side read folded in 2026-07-02: Trellis = foundation band (not a peer product card);
+//   keep copy capability-forward, NO availability/uptime/support implication (best-effort homelab infra).
+// SPICA card link intentionally omitted — no public demo yet (SPORE TODO).
+---
+
+<section id="products">
+  <div class="container">
+    <p class="section-label">Products</p>
+    <h2>A platform, not just an operator</h2>
+    <p class="under-intro">
+      Beyond running the desk, I bring a broadcast platform I built and host myself. Two
+      client-facing services &mdash; LIANA for live data and graphics, SPICA for rundowns
+      and timing &mdash; run on a shared foundation called Trellis, built to fit how shows
+      actually run rather than bent around someone else's tool.
+    </p>
+
+    <div class="under-grid">
+
+      <div class="card under-card">
+        <div class="under-icon">📡</div>
+        <div>
+          <h3>LIANA</h3>
+          <span class="pill sage">Runs on Trellis</span>
+          <p>
+            A multi-tenant broadcast data CMS. Replaces Google Sheets as the source of
+            truth for live show graphics &mdash; rosters, schedules, brackets, head-to-heads,
+            and talent predictions, all editable through a web UI and piped straight into
+            vMix as live data sources. First tenant: CBLOL UE.
+          </p>
+          <ul class="under-stack">
+            <li><span class="pill">Multi-tenant CMS</span></li>
+            <li><span class="pill">vMix Data Sources</span></li>
+            <li><span class="pill">GT Title Designer</span></li>
+            <li><span class="pill">Live Graphics</span></li>
+          </ul>
+          <a href="https://trellis.vermilionrose.me/liana/ui/" class="under-link" target="_blank" rel="noopener">Try the demo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card under-card">
+        <div class="under-icon">📋</div>
+        <div>
+          <h3>SPICA</h3>
+          <span class="pill sage">Runs on Trellis</span>
+          <p>
+            Broadcast rundowns and show timing. Run-of-show blocks with cascading segment
+            timing, a live operator panel for show night, client-scoped rosters, and call
+            sheets seeded from them &mdash; the running order, the clock, and the paperwork,
+            in the same platform that feeds the graphics.
+          </p>
+          <ul class="under-stack">
+            <li><span class="pill">Rundowns</span></li>
+            <li><span class="pill">Cascading Timing</span></li>
+            <li><span class="pill">Live Operator Panel</span></li>
+            <li><span class="pill">Call Sheets</span></li>
+            <li><span class="pill">Multi-tenant</span></li>
+          </ul>
+          {/* No public SPICA demo yet (SPORE TODO). Add the demo link here once /spica/ui/ has public access; until then, no login-walled CTA and no "coming soon" claim. */}
+        </div>
+      </div>
+
+      <div class="card under-card foundation-card">
+        <p class="foundation-label">The foundation</p>
+        <div class="under-icon">⚙️</div>
+        <div>
+          <h3>Trellis</h3>
+          <p>
+            The platform the rest run on: one API, one identity, many integrations. LIANA
+            and SPICA share a single login and database because Trellis gives them that
+            &mdash; each integration climbs the same lattice under its own URL prefix, on
+            shared auth (accounts, sessions, TOTP MFA), multi-tenancy, and a snapshot-guarded
+            deploy pipeline. It began as a tournament API and grew into the platform
+            everything else stands on.
+          </p>
+          <ul class="under-stack">
+            <li><span class="pill">FastAPI</span></li>
+            <li><span class="pill">Neon Postgres</span></li>
+            <li><span class="pill">Caddy</span></li>
+            <li><span class="pill">TOTP MFA</span></li>
+            <li><span class="pill">Multi-tenant</span></li>
+          </ul>
+          <a href="https://trellis.vermilionrose.me" class="under-link" target="_blank" rel="noopener">trellis.vermilionrose.me &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 { margin-bottom: 0.5rem; }
+
+  .under-intro {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .under-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .under-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .under-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 { margin-bottom: 0.4rem; }
+  .pill.sage { margin-bottom: 0.75rem; display: inline-block; }
+
+  .under-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    max-width: none;
+  }
+
+  .under-stack {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .under-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--rose);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rose);
+    padding-bottom: 1px;
+    margin-top: 0.25rem;
+    transition: color 120ms ease, border-color 120ms ease;
+  }
+  .under-link:hover, .under-link:focus {
+    color: var(--blush);
+    border-bottom-color: var(--blush);
+  }
+
+  /* Trellis presented as the substrate the two products stand on — full-width band
+     beneath LIANA + SPICA, marked with an eyebrow label rather than a peer-product pill. */
+  .foundation-card {
+    grid-column: 1 / -1;
+  }
+  .foundation-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--deep-rose);
+    margin-bottom: 0.75rem;
+  }
+</style>

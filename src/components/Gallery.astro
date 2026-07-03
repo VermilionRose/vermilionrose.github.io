@@ -60,6 +60,57 @@ const photos = [
   { file: "desk.jpg",                         caption: "Desk setup",                                                role: "—" },
 ];
 
+// Intrinsic pixel dimensions per image (from `sips -g pixelWidth -g pixelHeight`).
+// Set width/height on each <img> so the browser reserves space BEFORE the image loads —
+// eliminates the layout shift that made nav-anchors land mid-gallery, and fixes CLS.
+// Adding a new photo? Add its [w, h] here (run the sips command above on the file).
+const dims: Record<string, [number, number]> = {
+  "PXL_20260501_211257190.jpg": [1920, 1446],
+  "PXL_20260331_164858908.MP.jpg": [1920, 1446],
+  "PXL_20260331_165421865.MP.jpg": [1920, 1446],
+  "PXL_20260314_110950870.MP.jpg": [1920, 1446],
+  "PXL_20260307_044708194.jpg": [1920, 1446],
+  "PXL_20260114_160606968.jpg": [1920, 1446],
+  "PXL_20260114_160637815.jpg": [1920, 1446],
+  "PXL_20260116_140631850.MP.jpg": [1446, 1920],
+  "PXL_20251205_162307756.MP.jpg": [1920, 1446],
+  "PXL_20251113_151518997.jpg": [1920, 1446],
+  "PXL_20251106_191048683.jpg": [1920, 1446],
+  "PXL_20251007_200542602.MP.jpg": [1920, 1446],
+  "PXL_20251007_223030150.MP.jpg": [1920, 1446],
+  "PXL_20251007_172654344.jpg": [1920, 1446],
+  "PXL_20251007_172549586.MP.jpg": [1920, 1446],
+  "PXL_20251007_150523187.jpg": [1446, 1920],
+  "PXL_20251007_150511404.jpg": [1920, 1446],
+  "PXL_20250922_201146160.MP.jpg": [1920, 1446],
+  "yugioh_control_room.jpg": [1920, 1080],
+  "yugioh_gamer_pose.jpg": [1920, 1081],
+  "cblol_cover.jpg": [1916, 1080],
+  "cblol_multiview.jpg": [1680, 1050],
+  "cblol_multiview_2.jpg": [1920, 1160],
+  "nacl_cover.jpg": [1916, 1080],
+  "valorant_block_party.jpg": [1920, 1081],
+  "nba2k_launch.jpg": [1920, 1081],
+  "att_roadshow.jpg": [1920, 1080],
+  "att_roadshow_2.jpg": [1920, 1440],
+  "free_press_debate.jpg": [1920, 1081],
+  "play_one_up.jpg": [1920, 1080],
+  "axiecon.jpg": [1200, 675],
+  "bornless.jpg": [1200, 675],
+  "knights_forge_cover.jpg": [765, 431],
+  "glg_cover.jpg": [1920, 1083],
+  "dashboard_node_glg.jpg": [600, 334],
+  "sheets_controller.jpg": [600, 363],
+  "integrated_champ_select.jpg": [1335, 749],
+  "integrated_rcvolus.jpg": [1334, 752],
+  "talent_pred.jpg": [600, 338],
+  "adaptable_schedule.jpg": [600, 337],
+  "tricaster_control.jpg": [1920, 1081],
+  "quality_testing.jpg": [1920, 1081],
+  "hard_at_work.jpg": [1920, 1280],
+  "desk.jpg": [1920, 1079],
+};
+
 // Filter out ignored/placeholder entries
 const visiblePhotos = photos.filter(p => p.caption !== "—" || p.role !== "—");
 ---
@@ -75,6 +126,8 @@ const visiblePhotos = photos.filter(p => p.caption !== "—" || p.role !== "—"
           <img
             src={`/images/${p.file}`}
             alt={p.caption}
+            width={dims[p.file]?.[0]}
+            height={dims[p.file]?.[1]}
             loading="lazy"
           />
           <figcaption>
@@ -108,6 +161,7 @@ const visiblePhotos = photos.filter(p => p.caption !== "—" || p.role !== "—"
 
   .gallery-item img {
     width: 100%;
+    height: auto;
     display: block;
     transition: transform 0.3s ease;
   }
