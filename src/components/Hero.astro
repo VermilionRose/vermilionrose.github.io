@@ -31,9 +31,10 @@
 
 <style>
   #hero {
-    min-height: 100svh;
+    min-height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-block: 0;        /* override the global section 6rem top/bottom */
     background:
       radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184 106 124 / 0.12) 0%, transparent 70%),
       var(--bg);
@@ -43,7 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 6rem 0 4rem;
+    padding: 2.5rem 0 4rem;  /* single source of the hero's vertical spacing */
   }
 
   .hero-logo {
