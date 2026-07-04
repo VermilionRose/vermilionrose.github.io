@@ -23,32 +23,32 @@
             A set of self-hosted production tools built to harden the show-night layer:
             validation that catches silent failures before air, telemetry that surfaces
             incidents as they happen, logs that survive past the truck. Each runs locally
-            with no framework dependencies, no CDN, no build pipeline &mdash; built for
+            with no framework dependencies, no CDN, no build pipeline. Built for
             show-day resilience over developer convenience.
           </p>
           <ul class="under-tools">
             <li>
-              <strong>XYLIX</strong> &mdash; real-time stream-health dashboard: bitrate
+              <strong>XYLIX</strong>: a real-time stream-health dashboard with bitrate
               trends, dropped-frame alerts, encoder state, and a timestamped incident
               log on one screen.
             </li>
             <li>
-              <strong>EiC Check</strong> &mdash; pre-broadcast go/no-go validator.
+              <strong>EiC Check</strong>: a pre-broadcast go/no-go validator.
               Checks vMix state, integration endpoints, and dependency services in
               parallel, surfacing what's missing before air rather than during.
             </li>
             <li>
-              <strong>Show Event Log</strong> &mdash; production log for show night.
+              <strong>Show Event Log</strong>: a production log for show night.
               Timestamped, category-tagged entries (segments, graphics calls, replays,
               incidents) that become the post-show debrief source of truth.
             </li>
             <li>
-              <strong>GT Binding Validator</strong> &mdash; catches silent graphic-template
+              <strong>GT Binding Validator</strong>: catches silent graphic-template
               binding failures before air. Cross-references vMix GT field names against
               the live data feed and flags mismatches the operator can fix.
             </li>
             <li>
-              <strong>Event show-day rundowns</strong> &mdash; per-show observer trackers,
+              <strong>Event show-day rundowns</strong>: per-show observer trackers,
               draft boards, and bracket/scoring tools built to fit each event's format.
               Shipped instances: CoD pick/ban, LoL rundown + draft, 2XKO rundown with
               bracket and live game/round scoring.
@@ -71,8 +71,8 @@
           <h3>Bramble Homelab</h3>
           <span class="pill sage">Self-hosted</span>
           <p>
-            A personal homelab running on a low-power mini PC cluster &mdash;
-            Proxmox hypervisor, TrueNAS NAS, Home Assistant, and Frond: a
+            A personal homelab running on a low-power mini PC cluster:
+            Proxmox hypervisor, TrueNAS NAS, Home Assistant, and Frond, a
             custom Homepage dashboard styled with the Bramble palette.
             Everything is botany-named, Tailscale-connected, and documented.
           </p>
