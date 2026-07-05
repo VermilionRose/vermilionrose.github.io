@@ -5,12 +5,13 @@ interface Props {
 }
 
 const {
-  title = 'Rose | Rose Media Group',
+  title = 'vMix Operator & Broadcast Engineer in NYC | Rose Media Group',
   description = 'vMix operator, graphics integrator, and engineer in charge. NYC-based live production freelancer.',
 } = Astro.props;
 
 const canonicalURL = 'https://vermilionrose.me';
-const ogImage = `${canonicalURL}/images/rose_logo_white.png`;
+const logoImage = `${canonicalURL}/images/rose_logo_white.png`;
+const ogImage = `${canonicalURL}/images/og_image.png`; // 1200x630 share card (logo on brand background)
 
 // Structured data (JSON-LD) — linked graph so search engines read Rose (Person),
 // Rose Media Group (ProfessionalService), and the site as one connected entity.
@@ -23,7 +24,7 @@ const structuredData = {
       name: 'Rose',
       jobTitle: ['vMix Operator', 'Broadcast Engineer', 'Graphics Integrator'],
       url: canonicalURL,
-      image: ogImage,
+      image: logoImage,
       email: 'contact@vermilionrose.me',
       telephone: '+1-917-526-0455',
       worksFor: { '@id': `${canonicalURL}/#rmg` },
@@ -40,7 +41,7 @@ const structuredData = {
       '@id': `${canonicalURL}/#rmg`,
       name: 'Rose Media Group',
       url: canonicalURL,
-      image: ogImage,
+      image: logoImage,
       description:
         'Freelance live production and broadcast engineering: vMix operation, custom graphics integration, engineer-in-charge, and data-driven broadcast tooling. New York City based; available regionally and remote.',
       founder: { '@id': `${canonicalURL}/#rose` },
@@ -93,10 +94,13 @@ const structuredData = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rose Media Group" />
     <meta property="og:site_name" content="Rose Media Group" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
