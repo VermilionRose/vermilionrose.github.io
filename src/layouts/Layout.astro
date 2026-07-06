@@ -10,6 +10,7 @@ const {
 } = Astro.props;
 
 const canonicalURL = 'https://vermilionrose.me';
+const trellisURL = 'https://trellis.vermilionrose.me';
 const logoImage = `${canonicalURL}/images/rose_logo_white.png`;
 const ogImage = `${canonicalURL}/images/og_image.png`; // 1200x630 share card (logo on brand background)
 
@@ -34,7 +35,15 @@ const structuredData = {
         addressRegion: 'NY',
         addressCountry: 'US',
       },
-      sameAs: ['https://github.com/vermilionrose'],
+      sameAs: [
+        'https://github.com/vermilionrose',
+        'https://www.linkedin.com/in/vermilionrose-jacobpochron',
+      ],
+      owns: [
+        { '@id': `${trellisURL}/#trellis` },
+        { '@id': `${trellisURL}/liana/ui/#liana` },
+        { '@id': `${trellisURL}/spica/ui/#spica` },
+      ],
     },
     {
       '@type': 'ProfessionalService',
@@ -73,6 +82,44 @@ const structuredData = {
       url: canonicalURL,
       name: 'Rose Media Group',
       publisher: { '@id': `${canonicalURL}/#rmg` },
+    },
+    {
+      '@type': 'WebApplication',
+      '@id': `${trellisURL}/#trellis`,
+      name: 'Trellis',
+      url: trellisURL,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      description:
+        'Multi-tenant broadcast platform: one API, one identity, shared auth and multi-tenancy — the foundation LIANA and SPICA run on.',
+      creator: { '@id': `${canonicalURL}/#rose` },
+      provider: { '@id': `${canonicalURL}/#rmg` },
+    },
+    {
+      '@type': 'WebApplication',
+      '@id': `${trellisURL}/liana/ui/#liana`,
+      name: 'LIANA',
+      url: `${trellisURL}/liana/ui/`,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      description:
+        'Multi-tenant broadcast data CMS: rosters, schedules, brackets, and head-to-heads editable through a web UI and piped straight into vMix as live data sources. Runs on Trellis.',
+      creator: { '@id': `${canonicalURL}/#rose` },
+      provider: { '@id': `${canonicalURL}/#rmg` },
+      isPartOf: { '@id': `${trellisURL}/#trellis` },
+    },
+    {
+      '@type': 'WebApplication',
+      '@id': `${trellisURL}/spica/ui/#spica`,
+      name: 'SPICA',
+      url: `${trellisURL}/spica/ui/`,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      description:
+        'Broadcast rundowns and show timing: run-of-show blocks with cascading segment timing, a live operator panel, and call sheets. Runs on Trellis.',
+      creator: { '@id': `${canonicalURL}/#rose` },
+      provider: { '@id': `${canonicalURL}/#rmg` },
+      isPartOf: { '@id': `${trellisURL}/#trellis` },
     },
   ],
 };
