@@ -21,7 +21,7 @@
     <div class="under-grid">
 
       <div class="card under-card">
-        <div class="under-icon"><svg viewBox="0 0 32 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 31 V6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 24 L9 21.4 M16 18.5 L23 15.9 M16 15 L9 12.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="9" cy="21.4" r="2.2" fill="currentColor"/><circle cx="23" cy="15.9" r="2.2" fill="currentColor"/><circle cx="9" cy="12.4" r="2.2" fill="currentColor"/><circle cx="16" cy="6" r="2.5" fill="currentColor"/></svg></div>
+        <div class="under-icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 29 V5.5" fill="none" stroke="#3FC0A3" stroke-width="1.8" stroke-linecap="round"/><path d="M16 22.5 L9 19.9 M16 17 L23 14.4 M16 13.5 L9 10.9" fill="none" stroke="#3FC0A3" stroke-width="1.6" stroke-linecap="round"/><circle cx="9" cy="19.9" r="2.2" fill="#3FC0A3"/><circle cx="23" cy="14.4" r="2.2" fill="#3FC0A3"/><circle cx="9" cy="10.9" r="2.2" fill="#3FC0A3"/><circle cx="16" cy="5.5" r="2.5" fill="#2E9E86"/></svg></div>
         <div>
           <h3>LIANA</h3>
           <span class="pill sage">Runs on Trellis</span>
@@ -113,7 +113,7 @@
 
   .under-icon {
     margin-bottom: 0.75rem;
-    color: var(--accent);   /* mauve for the currentColor marks (LIANA); Trellis (Canopy-T) + SPICA carry their own colors */
+    color: var(--accent);   /* fallback only: all three marks now carry their own colors (Trellis mauve, LIANA viridian, SPICA gold); kept for any future currentColor mark */
     line-height: 0;
   }
   .under-icon svg {
